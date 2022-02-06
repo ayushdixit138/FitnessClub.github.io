@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Grow Fitness Club</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /*css reset*/
+    body {
+        font-family: 'Rowdies', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('image/bg.jpg');
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+    }
+
+    .left {
+        position: absolute;
+        left: 34px;
+        display: inline-block;
+        /* border: 2px solid red; */
+        top: 20px;
+    }
+
+    .left image {
+        width: 15px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        line-height: 0px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 33%;
+        margin: 20px auto;
+        /* border: 2px solid red; */
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 22px;
+        display: inline-block;
+        /* border: 2px solid orange; */
+        top: 20px;
+    }
+
+    .navigation {
+        display: inline-block;
+    }
+
+    /* without this navbar won't be in a single line */
+    .navigation li {
+        display: inline-block;
+
+    }
+
+    .navigation li a {
+        /* without this navbar won't be in white color */
+        color: white;
+        text-decoration: none;
+        /* to remove underline from navbar */
+        padding: 30px 20px;
+        /* to make space between home contact etc. */
+    }
+
+    .navigation li a:hover,
+    .navigation li a.active {
+        /* to change color when someone hover at any navbar content */
+        text-decoration: underline;
+        color: red;
+    }
+
+    .btn {
+        font-family: 'Rowdies', cursive;
+        margin: 0px 5px;
+        color: white;
+        background-color: black;
+        padding: 3px 12px;
+        border: 2px solid white;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        /*to show that user has now touched the button*/
+
+    }
+
+    .btn:hover {
+        background-color: rgb(141, 136, 136);
+    }
+
+    .btn1 {
+        font-family: 'Rowdies', cursive;
+        margin: 1px 40px;
+        color: white;
+        background-color: black;
+        padding: 3px 12px;
+        border: 2px solid black;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        /*to show that user has now touched the button*/
+
+    }
+
+    .btn1:hover {
+        background-color: rgb(141, 136, 136);
+    }
+
+    .container {
+        /* border: 2px solid green;
+        margin: 2px 2px;
+        padding: 2px 2px;
+        width: 33%;
+        border-radius: 2px 2px; */
+
+        /* border: 2px solid green; */
+        font-size: small;
+        margin: 100px 900px;
+        padding: 75px;
+        width: 25%;
+        border-radius: 28px;
+    }
+
+    .video{
+        position: relative;
+        padding-bottom:0px ;
+        padding-top: 50px;    
+    }
+
+    .video1{
+        position: relative;
+        padding-bottom:0px ;
+        padding-top: 20px;
+    }
+
+    .video2{
+        position: relative;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+</style>
+
+<body>
+    <header class="header">
+
+        <!-- for logo -->
+        <div class="left">
+            <img src="image/noback.png" alt="loading" width="124px">
+            <div>FitnessClub</div>
+
+        </div>
+
+        <!-- for navigation bar -->
+        <div class="mid">
+            <ul class="navigation">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="https://www.youtube.com/channel/UCtJzEhcTHpTwaYkQ2QGNOBA" target="blank">YT</a></li>
+                <li><a href="tel:7042532617">CONTACT</a></li>
+                <li><a href="https://sharma-hardik.github.io/Foodies/" target="blank">DIET</a></li>
+            </ul>
+
+        </div>
+        <!-- for buttons -->
+        <div class="right">
+            <button class="btn" >Call Us Now</button><button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Train with best trainers</h1>
+        <form action="noaction.php"></form>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter Your Name">
+            <input type="text" name="" placeholder="Enter Your PhoneNumber">
+            <input type="text" name="" placeholder="Enter Your Sex">
+            <input type="text" name="" placeholder="Enter Your Email">
+            <button class="btn1">Submit</button>
+        </div>
+
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/n7THXix9cpE"
+                frameborder="0" allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="video1">
+            <iframe src="https://www.youtube.com/embed/KS0UJh2COrg" 
+                frameborder="0" allowfullscreen>
+            </iframe>
+        </div>
+        
+        <div class="video2">
+            <iframe src="https://www.youtube.com/embed/AgwszFUm_yQ"
+                frameborder="0" allowfullscreen>
+            </iframe>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
